@@ -6,19 +6,33 @@ import { Videointeractivo } from './pages/Videointeractivo'
 import { Personajesactfo } from './pages/Personajesactfo'
 import { Activismo } from './pages/Activismo'
 import { Footer } from './pages/Footer'
-import { Texto } from './components/Texto'
 
 export const App = () => {
   return (
     <>
       <Header />
-      <Quees />
-      <Videointeractivo/>
-      <Comunidad/>
-      <Personajesactfo/>
-      <Activismo/>
+
+      <section id='Quees'>
+        <Quees/>
+      </section>
+
+      <section id='Videointeractivo'>
+        <Videointeractivo/>
+      </section>
+
+      <section id='Comunidad'>
+        <Comunidad/>
+      </section>
+
+      <section id='Personajesactfo'>
+        <Personajesactfo/>
+      </section>
+
+      <section id='Activismo'>
+        <Activismo/>
+      </section>
+
       <Footer/>
-      <Texto/>
     </>
   )
 }

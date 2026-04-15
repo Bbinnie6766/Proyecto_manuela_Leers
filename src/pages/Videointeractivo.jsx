@@ -31,8 +31,10 @@ export const Videointeractivo = () => {
           <video
             ref={videoRef}
             controls={playing}
+            preload="none"
             style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", display: playing ? "block" : "none", }} >
-            <source src={VIDEO_URL}/>
+            <source src={VIDEO_URL} type="video/mp4" />
+
           </video>
 
           {!playing && (
